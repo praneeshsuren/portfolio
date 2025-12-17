@@ -244,7 +244,7 @@ const About = () => {
           <div className="z-10 w-full h-full flex flex-col justify-between">
             <div>
               <p className="headtext">Time Zone</p>
-              <p className="subtext">I&apos;m based in Mars, and open to remote work.</p>
+              <p className="subtext">I&apos;m from planet Earth, and open to remote work.</p>
             </div>
             <div className="self-center translate-y-4 scale-110">
               <Globe />
