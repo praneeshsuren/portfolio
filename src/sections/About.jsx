@@ -7,27 +7,39 @@ import { Frameworks } from "../components/Frameworks";
 const About = () => {
   const grid2Container = useRef();
   const [activeEducation, setActiveEducation] = useState(1);
+
   return (
     <section className="c-space section-spacing" id="about">
       <h2 className="text-heading">About Me</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         {/* Grid 1: Intro */}
-        <div className="grid-default-color grid-1 flex flex-col justify-between">
-          <div className="relative flex-1">
-            <img
-              src="assets/coding-pov.png"
-              className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
-              alt="coding"
+        <div className="grid-default-color grid-1 bg-black-200 flex flex-col h-full relative rounded-3xl overflow-hidden pt-6">
+          <div className="absolute inset-0 h-full w-full flex flex-col">
+            <video
+              src="assets/video.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
             />
+            <div className="flex-1 relative z-10">
+              <img
+                src="assets/praneesh.png"
+                className="absolute h-95 w-full -bottom-2 left-4 object-contain"
+                alt="Praneesh Surendran"
+              />
+            </div>
+
+            <div className="z-20 relative w-full backdrop-blur-md bg-black/30 p-6 border-t border-white/10">
+              <p className="headtext text-white">Hi, I&apos;m Praneesh Surendran</p>
+              <p className="subtext text-white/80">
+                I build complete software solutions, from frontend interfaces to
+                backend systems, focused on quality, performance, and scalability.
+              </p>
+            </div>
+            <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-black-200 via-black-200/50 to-transparent" />
           </div>
-          <div className="z-10 mt-auto">
-            <p className="headtext">Hi, I&apos;m Praneesh Surendran</p>
-            <p className="subtext">
-              I build complete software solutions, from frontend interfaces to
-              backend systems, focused on quality, performance, and scalability.
-            </p>
-          </div>
-          <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
         </div>
 
         {/* Grid 2: Code is Craft */}
@@ -95,16 +107,16 @@ const About = () => {
                 >
                   <div
                     className={`w-3 h-3 rounded-full transition-colors duration-300 shadow-[0_0_10px_rgba(255,255,255,0.3)] ${activeEducation === 1
-                        ? "bg-mint shadow-[0_0_10px_#57db96]"
-                        : "bg-white group-hover:bg-mint group-hover:shadow-[0_0_10px_#57db96]"
+                      ? "bg-mint shadow-[0_0_10px_#57db96]"
+                      : "bg-white group-hover:bg-mint group-hover:shadow-[0_0_10px_#57db96]"
                       }`}
                   />
                 </div>
                 <div className="flex-1">
                   <h3
                     className={`text-lg font-semibold transition-colors duration-300 ${activeEducation === 1
-                        ? "text-mint"
-                        : "text-white group-hover:text-mint"
+                      ? "text-mint"
+                      : "text-white group-hover:text-mint"
                       }`}
                   >
                     B.Sc (Hons) in Software Engineering
@@ -120,8 +132,8 @@ const About = () => {
                       >
                         <div
                           className={`w-10 h-10 rounded-lg bg-white/10 p-1.5 flex items-center justify-center border transition-colors duration-300 ${activeEducation === 1
-                              ? "border-mint/30"
-                              : "border-white/10 group-hover:border-mint/30"
+                            ? "border-mint/30"
+                            : "border-white/10 group-hover:border-mint/30"
                             }`}
                         >
                           <img
@@ -154,16 +166,16 @@ const About = () => {
                 >
                   <div
                     className={`w-3 h-3 rounded-full transition-colors duration-300 shadow-[0_0_10px_rgba(255,255,255,0.3)] ${activeEducation === 2
-                        ? "bg-mint shadow-[0_0_10px_#57db96]"
-                        : "bg-white group-hover:bg-mint group-hover:shadow-[0_0_10px_#57db96]"
+                      ? "bg-mint shadow-[0_0_10px_#57db96]"
+                      : "bg-white group-hover:bg-mint group-hover:shadow-[0_0_10px_#57db96]"
                       }`}
                   />
                 </div>
                 <div className="flex-1">
                   <h3
                     className={`text-lg font-semibold transition-colors duration-300 ${activeEducation === 2
-                        ? "text-mint"
-                        : "text-white group-hover:text-mint"
+                      ? "text-mint"
+                      : "text-white group-hover:text-mint"
                       }`}
                   >
                     Higher Secondary Education
@@ -179,8 +191,8 @@ const About = () => {
                       >
                         <div
                           className={`w-10 h-10 rounded-lg bg-white/10 p-1.5 flex items-center justify-center border transition-colors duration-300 ${activeEducation === 2
-                              ? "border-mint/30"
-                              : "border-white/10 group-hover:border-mint/30"
+                            ? "border-mint/30"
+                            : "border-white/10 group-hover:border-mint/30"
                             }`}
                         >
                           <img
@@ -264,7 +276,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
