@@ -1,9 +1,9 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "WanderLanka – Travel Planning Platform",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "A comprehensive travel platform with booking, transport, and intelligent route planning features.",
     subDescription: [
       "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
       "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
@@ -225,18 +225,13 @@ export const myProjects = [
 
 export const mySocials = [
   {
-    name: "WhatsApp",
-    href: "",
-    icon: "/assets/socials/whatsApp.svg",
-  },
-  {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/surendran-praneesh-3a4324286/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/praneesh_suren/",
     icon: "/assets/socials/instagram.svg",
   },
 ];
