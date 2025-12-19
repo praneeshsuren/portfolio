@@ -8,15 +8,20 @@ const Project = ({
   subDescription,
   href,
   image,
+  images,
   tags,
   setPreview,
 }) => {
   const [isHidden, setIsHidden] = useState(false);
+
+  // Use first image from images array for preview, fallback to image prop
+  const previewImage = images && images.length > 0 ? images[0] : image;
+
   return (
     <>
       <div
         className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
-        onMouseEnter={() => setPreview(image)}
+        onMouseEnter={() => setPreview(previewImage)}
         onMouseLeave={() => setPreview(null)}
       >
         <div>
@@ -42,6 +47,7 @@ const Project = ({
           description={description}
           subDescription={subDescription}
           image={image}
+          images={images}
           tags={tags}
           href={href}
           closeModal={() => setIsHidden(false)}
@@ -57,6 +63,7 @@ Project.propTypes = {
   subDescription: PropTypes.string,
   href: PropTypes.string,
   image: PropTypes.string,
+  images: PropTypes.arrayOf(PropTypes.string),
   tags: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -67,3 +74,4 @@ Project.propTypes = {
 };
 
 export default Project;
+

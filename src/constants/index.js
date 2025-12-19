@@ -54,7 +54,10 @@ export const myProjects = [
     ],
     href: "https://github.com/praneeshsuren/nexchat",
     logo: "",
-    image: "/assets/projects/NexChat.png",
+    images: [
+      "/assets/projects/NexChat-Login.jpeg",
+      "/assets/projects/NexChat.png",
+    ],
     tags: [
       {
         id: 1,
@@ -138,7 +141,10 @@ export const myProjects = [
     ],
     href: "https://github.com/praneeshsuren/LifeTouch1",
     logo: "",
-    image: "/assets/projects/LifeTouch.png",
+    images: [
+      "/assets/projects/Lifetouch.png",
+      "/assets/projects/Lifetouch Admin.png"
+    ],
     tags: [
       {
         id: 1,

@@ -1,15 +1,20 @@
 import { motion } from "motion/react";
 import PropTypes from "prop-types";
+import ImageCarousel from "./ImageCarousel";
 
 const ProjectDetails = ({
   title,
   description,
   subDescription,
   image,
+  images,
   tags,
   href,
   closeModal,
 }) => {
+  // Support both single image and images array
+  const imageList = images && images.length > 0 ? images : image ? [image] : [];
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
       <motion.div
@@ -19,11 +24,11 @@ const ProjectDetails = ({
       >
         <button
           onClick={closeModal}
-          className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500"
+          className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500 z-10"
         >
           <img src="assets/close.svg" className="w-6 h-6" />
         </button>
-        <img src={image} alt={title} className="w-full rounded-t-2xl" />
+        <ImageCarousel images={imageList} title={title} />
         <div className="p-5">
           <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
@@ -41,9 +46,14 @@ const ProjectDetails = ({
                 />
               ))}
             </div>
-            <a className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation">
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
+            >
               View Project{" "}
-              <img src="assets/arrow-up.svg" className="size-4" href={href} />
+              <img src="assets/arrow-up.svg" className="size-4" />
             </a>
           </div>
         </div>
@@ -57,6 +67,7 @@ ProjectDetails.propTypes = {
   description: PropTypes.string,
   subDescription: PropTypes.arrayOf(PropTypes.string),
   image: PropTypes.string,
+  images: PropTypes.arrayOf(PropTypes.string),
   tags: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
