@@ -51,7 +51,7 @@ const Navbar = () => {
   const isCompact = isScrolled && !isOpen;
 
   // Smoother, softer spring for liquid feel
-  const springConfig = { type: "spring", stiffness: 150, damping: 22, mass: 1 };
+  const springConfig = { type: "spring", stiffness: 150, damping: 30, mass: 1 };
 
   return (
     <motion.div
