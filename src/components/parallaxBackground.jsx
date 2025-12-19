@@ -65,4 +65,4 @@ const ParallaxBackground = () => {
   );
 };
 
-export default parallaxBackground;
+export default ParallaxBackground;
