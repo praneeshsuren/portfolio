@@ -89,7 +89,7 @@ const About = () => {
               rounded
             />
             <Card
-              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
+              style={{ rotate: "45deg", top: "5%", left: "60%" }}
               image="assets/logos/java.svg"
               containerRef={grid2Container}
               rounded

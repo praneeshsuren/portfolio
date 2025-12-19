@@ -3,9 +3,6 @@ import PropTypes from "prop-types";
 
 export function Frameworks() {
   const skills = [
-    "auth0",
-    "blazor",
-    "cplusplus",
     "csharp",
     "css3",
     "dotnet",
@@ -13,12 +10,13 @@ export function Frameworks() {
     "git",
     "html5",
     "javascript",
-    "microsoft",
+    "java",
+    "spring-logo",
     "react",
-    "sqlite",
+    "node",
+    "postgresql",
+    "mysql-logo",
     "tailwindcss",
-    "vitejs",
-    "wordpress",
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
