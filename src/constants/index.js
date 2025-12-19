@@ -5,106 +5,121 @@ export const myProjects = [
     description:
       "A comprehensive travel platform with booking, transport, and intelligent route planning features.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "The system is built using a microservices architecture to ensure scalability and modularity.",
+      "I contributed to the development of web and mobile components, including a Tour Guide module for managing bookings and travel packages.",
+      "Designed a responsive and user-friendly frontend using Tailwind CSS to enhance the overall user experience.",
+      "Integrated RESTful APIs to enable seamless communication between services and deliver a consistent experience across devices.",
     ],
-    href: "",
+    href: "https://github.com/WanderLanka",
     logo: "",
-    image: "/assets/projects/accessories.jpg",
+    image: "/assets/projects/WanderLanka.png",
     tags: [
       {
         id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "Node.js",
+        path: "/assets/logos/node.svg",
       },
       {
         id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        name: "Express.js",
+        path: "/assets/logos/express.svg",
       },
       {
         id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Authentication & Authorization System",
-    description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
-    subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/auth-system.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
-      },
-      {
-        id: 2,
         name: "React",
         path: "/assets/logos/react.svg",
       },
       {
+        id: 4,
+        name: "MongoDB",
+        path: "/assets/logos/mongodb.svg",
+      },
+      {
+        id: 5,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      }
+    ],
+  },
+  {
+    id: 2,
+    title: "NexChat – Chat Application",
+    description:
+      "A secure and interactive chat platform featuring user authentication and real-time messaging via WebSocket",
+    subDescription: [
+      "The application is designed as a secure real-time chat system with user authentication and live messaging using WebSockets.",
+      "The backend is implemented using Spring Boot and PostgreSQL to handle message processing, persistence, and user data management.",
+      "Authentication and access control are integrated using Asgardeo to ensure secure and reliable identity management.",
+      "The frontend is built using React with Tailwind CSS for a modern and responsive user interface.",
+    ],
+    href: "https://github.com/praneeshsuren/nexchat",
+    logo: "",
+    image: "/assets/projects/NexChat.png",
+    tags: [
+      {
+        id: 1,
+        name: "Java",
+        path: "/assets/logos/java.svg",
+      },
+      {
+        id: 2,
+        name: "Spring",
+        path: "/assets/logos/spring.svg",
+      },
+      {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "PostgreSQL",
+        path: "/assets/logos/postgresql.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
+      {
+        id: 5,
+        name: "Asgardeo",
+        path: "/assets/logos/asgardeo.png",
+      }
     ],
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "Kamper - Camping Goods & Site Booking Platform",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "A Full-Stack MERN platform to browse and book camping sites and purchase camping gear.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "The platform is designed as a full-stack camping goods and site booking system, allowing users to browse and reserve camping sites and purchase gear.",
+      "The backend is implemented using Node.js and MongoDB to handle user data, site reservations, and gear purchases.",
+      "The frontend is built using React with Tailwind CSS for a modern and responsive user interface.",
+      "The system integrates real-time updates and efficient data handling to ensure reliable and smooth operations.",
     ],
-    href: "",
+    href: "https://github.com/tharindu-dm/Kamper",
     logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    image: "/assets/projects/Kamper.png",
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "Node.js",
+        path: "/assets/logos/node.svg",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "MongoDB",
+        path: "/assets/logos/mongodb.svg",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "React",
+        path: "/assets/logos/react.svg",
       },
       {
         id: 4,
+        name: "Express.js",
+        path: "/assets/logos/express.svg",
+      },
+      {
+        id: 5,
         name: "TailwindCSS",
         path: "/assets/logos/tailwindcss.svg",
       },
@@ -112,113 +127,44 @@ export const myProjects = [
   },
   {
     id: 4,
-    title: "C++ Game Engine",
+    title: "LifeTouch Fitness Gym - Management System",
     description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
+      "A web-based gym management system for LifeTouch Gym, enabling digital transformation of daily operations.",
     subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
+      "The system is designed as a web-based gym management platform for LifeTouch Gym, enabling digital transformation of daily operations.",
+      "The backend is implemented using PHP and SQL to manage attendance, workout schedules, inventory, reports, and event data efficiently.",
+      "The frontend is built using HTML, CSS, and JavaScript for a modern and responsive user interface.",
+      "The platform follows an MVC architecture to ensure organized code structure and maintainable system workflows.",
     ],
-    href: "",
+    href: "https://github.com/praneeshsuren/LifeTouch1",
     logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    image: "/assets/projects/LifeTouch.png",
     tags: [
       {
         id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
+        name: "php",
+        path: "/assets/logos/php.svg",
       },
       {
         id: 2,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        name: "mysql",
+        path: "/assets/logos/mysql.svg",
       },
       {
         id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "WordPress Custom Theme",
-    description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
-    subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
-      },
-      {
-        id: 2,
-        name: "HTML5",
+        name: "html",
         path: "/assets/logos/html5.svg",
       },
       {
-        id: 3,
-        name: "CSS3",
+        id: 4,
+        name: "css",
         path: "/assets/logos/css3.svg",
       },
       {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Online Learning Platform",
-    description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
-    subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
-    ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/elearning.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
-      },
+        id: 5,
+        name: "javascript",
+        path: "/assets/logos/javascript.svg",
+      }
     ],
   },
 ];
