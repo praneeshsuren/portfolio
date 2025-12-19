@@ -7,14 +7,23 @@ import Footer from './sections/Footer';
 
 const App = () => {
   return (
-    <div className="container mx-auto max-w-7xl">
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
+    <>
+      {/* Main container with max-width for most sections */}
+      <div className="container mx-auto max-w-7xl">
+        <Navbar />
+        <Hero />
+        <About />
+        <Projects />
+      </div>
+
+      {/* Contact section outside container for full-width particles */}
       <Contact />
-      <Footer/>
-    </div>
+
+      {/* Footer back in container */}
+      <div className="container mx-auto max-w-7xl">
+        <Footer />
+      </div>
+    </>
   );
 };
 
