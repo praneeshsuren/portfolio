@@ -3,6 +3,7 @@ import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
 import { Frameworks } from "../components/Frameworks";
+import { certifications } from "../constants";
 
 const About = () => {
   const grid2Container = useRef();
@@ -83,8 +84,15 @@ const About = () => {
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
-              image="assets/logos/blazor-pink.png"
+              image="assets/logos/javascript.svg"
               containerRef={grid2Container}
+              rounded
+            />
+            <Card
+              style={{ rotate: "-45deg", top: "5%", left: "10%" }}
+              image="assets/logos/java.svg"
+              containerRef={grid2Container}
+              rounded
             />
           </div>
         </div>
@@ -230,10 +238,16 @@ const About = () => {
             </div>
 
             <div className="flex flex-wrap gap-3 mt-4">
-              {["AWS Certified Developer", "Meta Frontend Developer", "Google UX Design", "HackerRank Problem Solving"].map((cert, index) => (
-                <div key={index} className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-mint/50 transition-all duration-300 cursor-default">
-                  <span className="text-sm text-neutral-300">{cert}</span>
-                </div>
+              {certifications.map((cert, index) => (
+                <a
+                  key={index}
+                  href={cert.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-mint/50 transition-all duration-300 cursor-pointer"
+                >
+                  <span className="text-sm text-neutral-300">{cert.name}</span>
+                </a>
               ))}
             </div>
           </div>

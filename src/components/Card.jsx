@@ -1,10 +1,10 @@
 import { motion } from "motion/react";
 import PropTypes from "prop-types";
 
-const Card = ({ style, text, image, containerRef }) => {
+const Card = ({ style, text, image, containerRef, rounded }) => {
   return image && !text ? (
     <motion.img
-      className="absolute w-15 cursor-grab"
+      className={`absolute w-15 cursor-grab ${rounded ? "rounded-full border-white/20 bg-white/5 " : ""}`}
       src={image}
       style={style}
       whileHover={{ scale: 1.05 }}
@@ -31,6 +31,8 @@ Card.propTypes = {
   text: PropTypes.string,
   image: PropTypes.string,
   containerRef: PropTypes.object,
+  rounded: PropTypes.bool,
 };
 
 export default Card;
+

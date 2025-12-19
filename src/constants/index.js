@@ -178,7 +178,7 @@ export const myProjects = [
 export const mySocials = [
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/surendran-praneesh-3a4324286/",
+    href: "https://www.linkedin.com/in/praneesh-surendran-3a4324286",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
@@ -271,5 +271,20 @@ export const reviews = [
     username: "@eve",
     body: "So glad I found this. It has changed the game for me.",
     img: "https://robohash.org/eve",
+  },
+];
+
+export const certifications = [
+  {
+    name: "Fundamentals of Java Programming",
+    href: "https://coursera.org/share/988aea44eb30fcac9593d812f90e78cd",
+  },
+  {
+    name: "Flutter and Dart Developer",
+    href: "https://coursera.org/share/13b96a75678a9a1f253d07279d09bf25",
+  },
+  {
+    name: "Full-Stack Web Development",
+    href: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-76ed29f5-75d0-42ca-b4d1-71f17bc8e3f4.pdf",
   },
 ];
