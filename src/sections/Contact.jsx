@@ -36,8 +36,8 @@ const Modal = ({ isOpen, onClose, type, message }) => {
               {/* Icon */}
               <div className="flex justify-center mb-6">
                 <div className={`w-16 h-16 rounded-full flex items-center justify-center ${isSuccess
-                    ? "bg-gradient-to-br from-mint to-aqua"
-                    : "bg-gradient-to-br from-coral to-fuchsia"
+                  ? "bg-gradient-to-br from-mint to-aqua"
+                  : "bg-gradient-to-br from-coral to-fuchsia"
                   }`}>
                   {isSuccess ? (
                     <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,8 +65,8 @@ const Modal = ({ isOpen, onClose, type, message }) => {
               <button
                 onClick={onClose}
                 className={`w-full py-3 px-6 rounded-xl font-semibold text-white transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] ${isSuccess
-                    ? "bg-gradient-to-r from-aqua to-mint"
-                    : "bg-gradient-to-r from-coral to-fuchsia"
+                  ? "bg-gradient-to-r from-aqua to-mint"
+                  : "bg-gradient-to-r from-coral to-fuchsia"
                   }`}
               >
                 {isSuccess ? "Great!" : "Try Again"}
@@ -159,7 +159,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative min-h-screen w-full">
+    <section id="contact" className="relative min-h-screen w-full mt-22 md:mt-20">
       {/* Modal */}
       <Modal
         isOpen={modal.isOpen}
