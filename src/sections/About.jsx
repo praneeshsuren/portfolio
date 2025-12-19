@@ -17,7 +17,7 @@ const About = () => {
         <div className="grid-default-color grid-1 bg-black-200 flex flex-col h-full relative rounded-3xl overflow-hidden pt-6">
           <div className="absolute inset-0 h-full w-full flex flex-col">
             <video
-              src="assets/video.mp4"
+              src="https://wf8k41thhxkm8pnc.public.blob.vercel-storage.com/video.mp4"
               autoPlay
               muted
               loop
