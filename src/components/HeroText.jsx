@@ -14,13 +14,13 @@ const HeroText = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const phrases = [
-    "Hi I'm Praneesh!",
-    "Welcome to my portfolio page!",
-    "Lets dive in to explore who I am!",
-  ];
-
   useEffect(() => {
+    const phrases = [
+      "Hi I'm Praneesh!",
+      "Welcome to my portfolio page!",
+      "Lets dive in to explore who I am!",
+    ];
+
     const handleType = () => {
       const i = loopNum % phrases.length;
       const fullText = phrases[i];
@@ -44,7 +44,7 @@ const HeroText = () => {
     const timer = setTimeout(handleType, typingSpeed);
 
     return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, phrases, typingSpeed]);
+  }, [text, isDeleting, loopNum, typingSpeed]);
   return (
     <div className="z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
       {/* Desktop View */}

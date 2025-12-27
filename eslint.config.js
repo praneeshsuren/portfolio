@@ -29,7 +29,8 @@ export default [
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
       'react/jsx-no-target-blank': 'off',
-      'react/no-unknown-property': ['error', { ignore: ['dispose', 'rotation', 'scale', 'position', 'object', 'geometry', 'material', 'skeleton', 'intensity', 'castShadow', 'receiveShadow', 'args'] }],
+      'react/prop-types': 'off',
+      'react/no-unknown-property': ['error', { ignore: ['dispose', 'rotation', 'scale', 'position', 'position-y', 'rotation-y', 'object', 'geometry', 'material', 'skeleton', 'intensity', 'castShadow', 'receiveShadow', 'args'] }],
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
