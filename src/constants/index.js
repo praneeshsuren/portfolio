@@ -182,9 +182,9 @@ export const mySocials = [
     icon: "/assets/socials/linkedIn.svg",
   },
   {
-    name: "Instagram",
-    href: "https://www.instagram.com/praneesh_suren/",
-    icon: "/assets/socials/instagram.svg",
+    name: "GitHub",
+    href: "https://github.com/praneeshsuren",
+    icon: "/assets/socials/github.svg",
   },
 ];
 
